@@ -15,13 +15,16 @@
   dengan menggunakan simple search jumlah tahapan terbanyak yang mungkin kita lakukan adalah sebanyak 240.000 steps, jika kata yang kamu cari berada di halaman paling belakang dari buku. Sedangkan dengan menggunakan binary search kita bisa mengeliminasi setengahnya hingga ketemu kata tersebut. Jadi binary search akan membutuhkan total 18 steps saja. Secara umum untuk setiap list secara N, binary search akan mengambil log2N steps untuk menjalankan worst case, dimana simple search akan mengambil N steps.
 
 # Logaritma
-  Logs adalah kebalikan dari eksponensial. CTH: 10**2 = 100 <-> log10 100 = 2. 
-
-Dalam buku ini, ketika kita berbicara mengenai Running time dalam Big O notatition dan ditemui adanya ekspresi log maka  ekspresi log ini selalu mengacu pada log basis2. Ketika kamu mencari sebuah element menggunakan simple search, dalam worst case kamu mungkin harus melihat satu per satu element yang ada. Jadi ketika ada list untuk 8 nomor, kamu harus mengecek sebanyak 8 kali. Sedangkan ketika kita menggunakan binary search kita hanya perlu mengecek sebanyak log n element dalam worst case. Untuk 8 element, log 8 = 3 dikarenakan 2**3 = 8. Untuk list dengan 1024 elements, log 1024 = 10, karena 2^10 = 1024.
+  Logs adalah kebalikan dari eksponensial. CTH: 10^2 = 100 <-> log10 100 = 2. 
+Dalam buku ini, ketika kita berbicara mengenai Running time dalam Big O notatition dan ditemui adanya ekspresi log maka  ekspresi log ini selalu mengacu pada log basis2. Ketika kamu mencari sebuah element menggunakan simple search, dalam worst case kamu mungkin harus melihat satu per satu element yang ada. Jadi ketika ada list untuk 8 nomor, kamu harus mengecek sebanyak 8 kali. Sedangkan ketika kita menggunakan binary search kita hanya perlu mengecek sebanyak log n element dalam worst case. Untuk 8 element, log 8 = 3 dikarenakan 2^3 = 8. Untuk list dengan 1024 elements, log 1024 = 10, karena 2^10 = 1024.
 
 	# Notes
 	Binary search hanya bekerja jika list yang diberikan sudah terurut, seperti contohnya nama didalam kontak HP yang udah terurut secara alphabetical, jadi kamu bisa menggunakan binary search untuk mencari suatu nama.
  
 # Binary Search in Python
   Pada Python, setiap elemen dalam list memiliki sebuah index yang dimulai dari 0. Index ini digunakan untuk mengakses atau memanipulasi elemen dalam list. Untuk mengakses elemen dalam list, kita dapat menggunakan index dengan menuliskan nama list diikuti dengan kurung siku ([]) yang berisi index dari elemen yang ingin diakses. Fungsi binary_search akan mengambil array yang sudah terurut. Jika item yang ada didalam array, fungsi akan mengembalikan posisi item tersebut.
+
+
+# Running Time
+  Running Time adalah jumlah waktu yang digunakan untuk mengeksekusi seluruh operasi di dalam suatu algoritma. Running time dari sebuah algoritma adalah fungsi dari jumlah inputnya, cth: ketika kita memiliki 100 element maka kita akan melakukan pengecekan sebanyak 100 kali. 
 	
