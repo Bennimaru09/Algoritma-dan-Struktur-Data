@@ -34,19 +34,23 @@ Dalam buku ini, ketika kita berbicara mengenai Running time dalam Big O notatiti
 # Algorithm running times grow at different rates
   Kita tahu bahwa di satu sisi binary search lebih cepat dibandingkan dengan simple search, namun disisi yang lain simple search lebih mudah untuk ditulis, dan simple search hanya memiliki kemungkinan kecil untuk menghasilkan suatu bug.
   Simple Search dan Binary Search adalah dua algoritma yang digunakan untuk mencari elemen dalam kumpulan data terurut. Mari kita bahas perbedaan di antara keduanya:
-Simple Search :
-- Cara Kerja: Simple Search menelusuri elemen satu per satu dalam kumpulan data hingga menemukan elemen yang dicari.
+Simple Search : Simple Search menelusuri elemen satu per satu dalam kumpulan data hingga menemukan elemen yang dicari.
+
 Kelebihan:
 - Sederhana: Implementasi sederhana karena hanya memerlukan iterasi melalui seluruh elemen.
 - Tidak Memerlukan Data Terurut: Bekerja pada kumpulan data apa pun, tidak harus terurut.
+
 Kekurangan:
 - Waktu Eksekusi: Pada skenario terburuk, memerlukan banyak langkah (misalnya, jika elemen yang dicari berada di akhir kumpulan data).
 - Efisiensi: Tidak efisien untuk kumpulan data besar.
-Binary Search (Pencarian Biner):
-- Cara Kerja: Binary Search membagi kumpulan data menjadi dua bagian dan memeriksa elemen tengah. Jika elemen tengah lebih besar dari elemen yang dicari, maka hanya perlu mencari di setengah kiri. - Jika lebih kecil, hanya perlu mencari di setengah kanan. Proses ini berlanjut hingga elemen ditemukan.
+  
+Binary Search : Binary Search membagi kumpulan data menjadi dua bagian dan memeriksa elemen tengah. Jika elemen tengah lebih besar dari elemen yang dicari, maka hanya perlu mencari di setengah kiri. -Jika lebih kecil, hanya perlu mencari di setengah kanan. Proses ini berlanjut hingga elemen ditemukan.
+
 Kelebihan:
 - Efisien: Pada skenario terburuk, memerlukan logaritma basis 2 dari jumlah elemen (O(log n)).
 - Hanya Bekerja pada Data Terurut: Memerlukan data terurut sebelumnya.
+  
 Kekurangan:
 - Pra-Pengurutan: Memerlukan pengurutan data sebelum pencarian.
 - Tidak Cocok untuk Data Tidak Terurut: Tidak dapat digunakan pada data yang tidak terurut.
+  
