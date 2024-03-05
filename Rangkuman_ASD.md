@@ -53,4 +53,19 @@ Kelebihan:
 Kekurangan:
 - Pra-Pengurutan: Memerlukan pengurutan data sebelum pencarian.
 - Tidak Cocok untuk Data Tidak Terurut: Tidak dapat digunakan pada data yang tidak terurut.
-  
+
+# Big O establishes a worst-case run time
+  Misalkan Kamu menggunakan pencarian sederhana untuk mencari seseorang di buku telepon. Kamu tahu bahwa pencarian sederhana membutuhkan waktu O(n) untuk dijalankan, yang berarti dalam kasus terburuk, Kamu harus memeriksa setiap entri di buku telepon Kamu. Dalam hal ini, Kamu sedang mencari Adit. Orang ini adalah entri pertama di ponsel Kamu buku. Jadi Kamu tidak perlu melihat setiap entri Kamu menemukannya pada percobaan pertama. Apakah algoritma ini memakan waktu O(n)? Atau apakah perlu waktu 0(1) karena Anda menemukan orang itu pada percobaan pertama?
+Simple search masih membutuhkan waktu O(n). Dalam hal ini, Anda langsung menemukan apa yang kamu cari. Itu adalah kasus skenario terbaik Namun notasi Big O adalah tentang skenario terburuk Jadi bisa dibilang, dalam kasus terburuk, kamu harus melihat setiap entri di dalamnya buku telepon satu kali. 
+
+# Some common Big O run times
+O(log n), diketahui sebagai log time, cth: binary search
+O(n), diketahui sebagai linear time, cth: simple search
+O(n * log n), cth: sebuah algoritma penyortiran cepat, seperti quicksort
+O(n^2), cth: sebuah algoritma penyortiran lambat, seperti selection sort
+O(log n), cth: sebuah algoritma penyortiran yang sangat lambat, seperti traveling sales person
+
+Misalkan kamu menggambar kotak yang terdiri dari 16 kotak lagi, dan kamu dapat memilih dari 5 kotak algoritma yang berbeda untuk melakukannya kamu dapat melakukan 10 operasi per detik. Jika kamu menggunakan algoritma pertama, kamu memerlukan waktu O(logn) untuk menggambar grid. Dengan waktu O(log n), kamu memerlukan 4 operasi untuk menggambar kotak yang terdiri dari 16 kotak (log 16 adalah 4). Jadi, kamu memerlukan waktu 0,4 detik untuk menggambar kisi-kisinya. Bagaimana jika kamu harus menggambar 1.024 kotak? Ini akan membawa kamu log 1.024 = 10 operasi, atau 1 detik untuk menggambar kotak 1.024 kotak Angka-angka ini menggunakan algoritma pertama. Algoritma kedua lebih lambat: O(n) time. Akan dibutuhkan 16 operasi untuk mengambar 16 box, dan akan mengambil 1024 operasi untuk mengambar 1024 box.
+
+# Recap Big O Notation 
+kesimpulan utamanya adalah sebagai berikut: Kecepatan Algoritma tidak diukur dalam hitungan detik, namun dalam pertumbuhan jumlah operasi. Sebaliknya, kita berbicara tentang seberapa cepat waktu berjalan suatu algoritma meningkat ukuran masukan bertambah Waktu berjalannya algoritma dinyatakan dalam notasi Big 0 O(log n) lebih cepat dari O(n), tetapi menjadi jauh lebih cepat seiring dengan daftar item yang kamu cari.
