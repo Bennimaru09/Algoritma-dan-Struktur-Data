@@ -23,4 +23,5 @@ Dalam buku ini, ketika kita berbicara mengenai Running time dalam Big O notatiti
 	Binary search hanya bekerja jika list yang diberikan sudah terurut, seperti contohnya nama didalam kontak HP yang udah terurut secara alphabetical, jadi kamu bisa menggunakan binary search untuk mencari suatu nama.
  
 # Binary Search in Python
+  Pada Python, setiap elemen dalam list memiliki sebuah index yang dimulai dari 0. Index ini digunakan untuk mengakses atau memanipulasi elemen dalam list. Untuk mengakses elemen dalam list, kita dapat menggunakan index dengan menuliskan nama list diikuti dengan kurung siku ([]) yang berisi index dari elemen yang ingin diakses. Fungsi binary_search akan mengambil array yang sudah terurut. Jika item yang ada didalam array, fungsi akan mengembalikan posisi item tersebut.
 	
