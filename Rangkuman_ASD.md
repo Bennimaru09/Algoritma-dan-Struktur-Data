@@ -26,5 +26,27 @@ Dalam buku ini, ketika kita berbicara mengenai Running time dalam Big O notatiti
 
 
 # Running Time
-  Running Time adalah jumlah waktu yang digunakan untuk mengeksekusi seluruh operasi di dalam suatu algoritma. Running time dari sebuah algoritma adalah fungsi dari jumlah inputnya, cth: ketika kita memiliki 100 element maka kita akan melakukan pengecekan sebanyak 100 kali. 
-	
+  Running Time adalah jumlah waktu yang digunakan untuk mengeksekusi seluruh operasi di dalam suatu algoritma. Running time dari sebuah algoritma adalah fungsi dari jumlah inputnya, cth: ketika kita memiliki 100 element maka kita akan melakukan pengecekan sebanyak 100 kali. Linear Time adalah ketika runtime dari fungsi kita berbanding lurus dengan jumlah input yang diberikan. Dalam analisis sistem, sistem linear time-invariant (sistem LTI) adalah sistem yang menghasilkan sinyal keluaran dari setiap sinyal input yang tunduk pada kendala linearitas dan waktu-invarians. Dalam istilah yang lebih sederhana, algoritma linear memiliki kompleksitas waktu yang berhubungan secara langsung dengan ukuran input yang diberikan. Binary search berjalan di dalam logarithmic time(atau log time). 
+
+# Big O Notation
+  Big O Notation adalah spesial notasi yang bisa mendeskripsikan seberapa cepat sebuah algoritma itu. Big O Notation adalah cara untuk mengkonversi keseluruhan langkah-langkah suatu algoritma kedalam bentuk Aljabar. Notasi ini merepresentasikan banyaknya langkah suatu algoritma dengan menghiraukan konstanta yang lebih kecil dan koefisien yang tidak berdampak besar terhadap keseluruhan kompleksitas dari algoritma tersebut. Big O Notation digunakan untuk melakukan analisa terhadap sebuah algoritma pemrograman terhadap waktu eksekusi dan untuk menentukan seberapa efisien dan kompleksitas barisan kode dalam dimensi waktu. 
+
+# Algorithm running times grow at different rates
+  Kita tahu bahwa di satu sisi binary search lebih cepat dibandingkan dengan simple search, namun disisi yang lain simple search lebih mudah untuk ditulis, dan simple search hanya memiliki kemungkinan kecil untuk menghasilkan suatu bug.
+  Simple Search dan Binary Search adalah dua algoritma yang digunakan untuk mencari elemen dalam kumpulan data terurut. Mari kita bahas perbedaan di antara keduanya:
+Simple Search :
+- Cara Kerja: Simple Search menelusuri elemen satu per satu dalam kumpulan data hingga menemukan elemen yang dicari.
+Kelebihan:
+- Sederhana: Implementasi sederhana karena hanya memerlukan iterasi melalui seluruh elemen.
+- Tidak Memerlukan Data Terurut: Bekerja pada kumpulan data apa pun, tidak harus terurut.
+Kekurangan:
+- Waktu Eksekusi: Pada skenario terburuk, memerlukan banyak langkah (misalnya, jika elemen yang dicari berada di akhir kumpulan data).
+- Efisiensi: Tidak efisien untuk kumpulan data besar.
+Binary Search (Pencarian Biner):
+- Cara Kerja: Binary Search membagi kumpulan data menjadi dua bagian dan memeriksa elemen tengah. Jika elemen tengah lebih besar dari elemen yang dicari, maka hanya perlu mencari di setengah kiri. - Jika lebih kecil, hanya perlu mencari di setengah kanan. Proses ini berlanjut hingga elemen ditemukan.
+Kelebihan:
+- Efisien: Pada skenario terburuk, memerlukan logaritma basis 2 dari jumlah elemen (O(log n)).
+- Hanya Bekerja pada Data Terurut: Memerlukan data terurut sebelumnya.
+Kekurangan:
+- Pra-Pengurutan: Memerlukan pengurutan data sebelum pencarian.
+- Tidak Cocok untuk Data Tidak Terurut: Tidak dapat digunakan pada data yang tidak terurut.
