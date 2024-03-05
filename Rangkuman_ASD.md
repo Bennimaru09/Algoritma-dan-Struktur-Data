@@ -19,7 +19,7 @@
 
 Dalam buku ini, ketika kita berbicara mengenai Running time dalam Big O notatition dan ditemui adanya ekspresi log maka  ekspresi log ini selalu mengacu pada log basis2. Ketika kamu mencari sebuah element menggunakan simple search, dalam worst case kamu mungkin harus melihat satu per satu element yang ada. Jadi ketika ada list untuk 8 nomor, kamu harus mengecek sebanyak 8 kali. Sedangkan ketika kita menggunakan binary search kita hanya perlu mengecek sebanyak log n element dalam worst case. Untuk 8 element, log 8 = 3 dikarenakan 2**3 = 8. Untuk list dengan 1024 elements, log 1024 = 10, karena 2^10 = 1024.
 
-# Notes
+	# Notes
 	Binary search hanya bekerja jika list yang diberikan sudah terurut, seperti contohnya nama didalam kontak HP yang udah terurut secara alphabetical, jadi kamu bisa menggunakan binary search untuk mencari suatu nama.
  
 # Binary Search in Python
